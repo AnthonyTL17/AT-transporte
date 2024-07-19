@@ -1,0 +1,85 @@
+body{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: blanchedalmond;
+}
+.i1{
+    width:1fr;
+    height: 450px;
+    background-image:url(/img/banners.jpg) ;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+/* estilos de menu  */
+.menu{
+    background-color: black
+}
+.menu ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+.menu ul li{
+    margin: 0 55px ;
+}
+.menu ul li a{
+    color: white;
+    text-decoration: none;
+    padding: 15px 10px;
+    display: block;
+}
+.menu ul li a:hover{
+    background-color: #8f8c8c;
+}
+
+main{
+    padding: 2rem;
+    background-color:rgb(238,238,236);
+}
+footer{
+    background-color: blue;
+    color: white;
+    text-align: center;
+    padding: 9px;
+}
+
+@media(max-width:768px){
+    
+    .menu ul {
+        flex-direction: column;
+    }
+    .menu ul li{
+        margin: 0;
+        border-bottom: 1px solid gray;
+    }
+    .menu ul li a{
+        text-align: center;
+    }
+    .contenido-servicios{
+        flex-direction: column;
+    }
+    .contenido-servicios img{
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+    .flota-grid{
+        grid-template-columns: 1fr;
+    }
+}
+
+@media(min-width:769px) and (max-width:1024px) {
+    .flota-grid{
+        grid-template-columns: repeat(2,1fr);
+    }
+}     
+
+
+
+
+
+
+
+
